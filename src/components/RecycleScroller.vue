@@ -574,9 +574,9 @@ export default {
 
     scrollToPosition (position) {
       if (this.direction === 'vertical') {
-        this.$el.scrollTop = position
+        this.$el.scrollTo({top: position, behavior: 'smooth'})
       } else {
-        this.$el.scrollLeft = position
+        this.$el.scrollTo({left: position, behavior: 'smooth'})
       }
     },
 
